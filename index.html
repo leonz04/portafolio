@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+
+<body class="body body_light body_dark">
+    <header>
+        <video autoplay loop muted >
+            <source src="./assets/intro1.mp4">
+        </video>
+
+        <section class="header__section__mainInfo">
+            <article class="header__section__buttons">
+                <a download="" href="./assets/logo.png"><button type="button">Download CV</button></a>
+                <a><button type="button" id="modal">Contactame</button></a>
+                <p id="text"></p>
+            </article>
+            <h2 class="header__h2_name">Andres Felipe Leon</h2>
+            <h1>Full Stack Developer</h1>
+        </section>
+
+        <nav class="header_nav__ul">
+            <button type="button" class="nav_button_langmode">Language</button>
+            <button type="button" class="nav_button_langmode">Dark Mode</button>
+            <ul>
+                <li>Inicio</li>
+                <li class="button__of">Sobre Mi</li>
+                <li>Habilidades</li>
+                <li>Blog</li>
+                <li>Proyectos</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main_sectionProfile">
+            <img src="./assets/logo.png" atl="imagenHistoria">
+            <h2 class="main__aboutMe">Sobre Mi</h2>
+            <p>Soy una persona apasionada y creativa, especializada en desarrollo web. Mi enfoque se centra en
+                liderazgo, trabajo en equipo y la capacidad de mantener la calma bajo presión. Valoro la lealtad como
+                uno de mis principios fundamentales y creo en la autoexigencia, el respeto y la honestidad en
+                cada aspecto de mi vida profesional y personal
+            </p>
+
+        </section>
+
+        <section class="main_section_technologies">
+            <h2>Tecnólogias</h2>
+            <article>
+                <ul>
+                    <li class="technologies_card">
+                        <span></span>
+                        <img src="" alt="animacion de carga correspondiente a la habilidad"></img>
+                        <h3>Nombre Tecnologia</h3>
+                        <p>Descipcion</p>
+                    </li>
+                    <li class="technologies_card">
+                        <img src="" alt="animacion de carga correspondiente a la Tecnologia"></img>
+                        <h3>Nombre Tecnologia</h3>
+                        <p>Descipcion</p>
+                    </li>
+                    <li class="technologies_card">
+                        <img src="" alt="animacion de carga correspondiente a la Tecnologia"></img>
+                        <h3>Nombre Tecnologia</h3>
+                        <p>Descipcion</p>
+                    </li>
+                    <li class="technologies_card">
+                        <img src="" alt="animacion de carga correspondiente a la Tecnologia"></img>
+                        <h3>Nombre Tecnologia</h3>
+                        <p>Descipcion</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main_sectionProyects">
+            <h2>proyects</h2>
+            <ul>
+                <li class="proyect_card">
+                    <img src="" alt="imagen del proyecto, puede ser un video">
+                    <h3>nombre del proyecto</h3>
+                    <p>Descipcion del proyecto</p>
+                </li>
+                <li class="proyect_card">
+                    <img src="" alt="imagen del proyecto, puede ser un video">
+                    <h3>nombre del proyecto</h3>
+                    <p>Descipcion del proyecto</p>
+                </li>
+                <li class="proyect_card">
+                    <img src="" alt="imagen del proyecto, puede ser un video">
+                    <h3>nombre del proyecto</h3>
+                    <p>Descipcion del proyecto</p>
+                </li>
+                <li class="proyect_card">
+                    <img src="" alt="imagen del proyecto, puede ser un video">
+                    <h3>nombre del proyecto</h3>
+                    <p>Descipcion del proyecto</p>
+                </li>
+            </ul>
+
+        </section>  
+        <dialog id="dialog">
+            <form action="" class="contact-form">
+                <button type="button"  aria-label="close" id="form__button_close" formmethod="dialog" formnovalidate>X</button>
+                    <div class="col-sm-6">
+                      <div class="input-block">
+                        <label for="">First Name</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="input-block">
+                        <label for="">Last Name</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="input-block">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="input-block">
+                        <label for="">Message Subject</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="input-block textarea">
+                        <label for="">Drop your message here</label>
+                        <textarea rows="3" type="text" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <button type="submit" class="square-button">Send</button>
+                    </div>
+                    
+                  <button id="jsbutton">JS close</button>
+                  <button id="reset" type="reset">Reset</button>
+                </p>
+              </form>
+        </dialog>
+    </main>
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"></li><a class="menu__link" ><p id="contacto">Contact</p></a></li>
+
+        </ul>
+        <p>&copy;2023 Andres Felipe Leon | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/js.js"></script>
+
+</body>
+    
+
+
+</html>
