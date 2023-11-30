@@ -12,9 +12,12 @@
 }
 
 .body_dark{
-    --bg: #0F1A24;
+    --bg: #402A25;
     --bg-secondary: #34495E;
-    --text:#FFFFFF;
+    --text:#d9d3d0;
+    --btn-active: #4177bd;
+    --btn-hover:#1a60eb;
+    --titles:#1C58A6;
 }
 
 body{
@@ -41,9 +44,11 @@ header{
     display: flex;
     width: 100%;
     height: 10vh;
-    opacity: 80%;
+
     align-items: center;
-    background-color: #34495E;
+    border: 2px solid var(--text);
+    background-color: #000000;
+    z-index: 1;
 }
 
 .header_nav__ul ul{
@@ -85,7 +90,7 @@ h1{
     color:white;
     margin-bottom: 0px;
     align-self: center;
-    animation: entrada 3s linear ;
+    animation: entrada 3s linear ;s
 }
 
 .header__h2_name{
@@ -109,24 +114,34 @@ h1{
     list-style-type: none;
     padding: 10px;
     margin: 0 5px;
-    border: 2px solid black;
+    border: 1px solid white;
     box-shadow:  0 0 3px 1px black  ;
-    transition: scalem 3s;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    height: 10px;
+    align-items: center;
+    transition: box-shadow 0.5s ;
     
 }
 
 .active{
-  background-color: #6AB7FF;
-  
+  background-color: var(--btn-active);
+  border: 0;
+  box-shadow: 0 0 2px 1px red ;
+  transform: scale(1.1);  
+  padding: 0.5px;
+  font-weight: 500;
 }
+
 
 .header_nav__ul ul li:hover{
     
-    transform: scale(1.1);    
+    transform: scale(1.1);
+    background-color: #blue;
     
 }
 
-.header_nav__ul ul li:ACTIVE{
+.header_nav__ul ul li:active{
     
   transform: scale(0.9);
   box-shadow:  0 0 3px 1px black inset  ;
@@ -193,21 +208,19 @@ button{
     
 }
 
-.button__of{
+.button__active_shadow{
     box-shadow: 0 0 2px 1px ;
+
     
 }
 
-.button__of:hover{
-    background-color: blueviolet;
+.button__active_shadow:hover{
+    
     box-shadow: 0 0 2px 1px ;
+    background-color: var(--btn-hover);
     
 }
-.button__of:active{
-    background-color: red;
-    
-    
-}
+
 
 .main_section_technologies{
     display: flex;
@@ -412,6 +425,10 @@ dialog{
   justify-content: space-around;
   width: 50%;
   height: 50vh;
+}
+
+@media screen {
+  
 }
 
 
