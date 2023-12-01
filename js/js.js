@@ -3,6 +3,7 @@ window.addEventListener('load', function () {
     const dialog = document.getElementById('dialog');
 
     const close = document.getElementById('form__button_close');
+    const close1 = document.getElementById('jsbutton');
 
     modal.addEventListener('click', (event) => {
         dialog.showModal();
@@ -10,6 +11,9 @@ window.addEventListener('load', function () {
 
 
     close.addEventListener('click', (event) => {
+        dialog.close();
+    });
+    close1.addEventListener('click', (event) => {
         dialog.close();
     });
 
