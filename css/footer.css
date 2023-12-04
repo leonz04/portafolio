@@ -1,0 +1,23 @@
+footer{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  /* .one {
+    background-color: beige;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .two {
+    background-color: blueviolet;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .three {
+    background-color: brown;
+    grid-column: 1;
+    grid-row: 1;
+  } */
