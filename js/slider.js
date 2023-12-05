@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   rigth.addEventListener('click', function () {
     // window.alert('rigth')
-    index = (index < 5 - 4) ? ++index : 0
+    index = (index < 5 - 1) ? ++index : 0
     articleUl.style.transform = `translateX(-${index * 100}%)`
   })
 })

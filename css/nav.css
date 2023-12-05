@@ -1,0 +1,268 @@
+/*bar_nav*/
+
+.body__navBar {
+    display:flex;
+    width: 100%;
+    position: fixed;
+    height: 7vh;
+    backdrop-filter: blur(15px);
+  
+   }
+   
+  
+   .navBar{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+   }
+   
+   
+   .body__navBar span{
+    display: none;
+    color: var(--text);
+   }
+  
+   
+  
+   
+  
+   .navBar__menu{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+  
+   }
+  
+   .body__navBar ul li {
+    text-align: center;
+     margin: 0 20px;
+     color: var(--text);
+     font-size: 1.15em;
+     font-weight: 400;
+     padding: 6px 10px;
+   }
+
+   .body__navBar ul li:hover{
+    background-color: #2d4bf0;
+  
+   }
+  
+   .nav_ul_lm{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    list-style: none;
+   }
+  
+  
+   
+  /*progress_bar*/
+   #progress {
+    height: 2px;
+    background-color: var(--text);
+    position: fixed;
+    top: 6vh;
+    left: 0;
+    z-index: 10;
+    /* width: 30%; */
+  }
+
+  @media (min-width: 1251px) and (max-width: 1650px) {
+    
+    .body__navBar { 
+        backdrop-filter:blur(15px);
+        padding: 0;
+      }
+    
+      .body__navBar ul li {
+    
+        margin: 0 5px;
+        font-size: 0.9em;
+      }
+      
+  }
+  @media (min-width: 901px) and (max-width: 1250px) {
+    
+    .body__navBar { 
+        backdrop-filter:blur(15px);
+        padding: 0;
+      }
+    
+      .body__navBar ul li {
+    
+        margin: 0 5px;
+        font-size: 0.9em;
+      }
+      
+  }
+
+
+  @media (min-width: 451px) and (max-width: 900px) {
+    
+
+    .body__navBar {
+      backdrop-filter: none ;
+      padding: 0;
+    }
+
+    .navBar {
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      top: 6vh;
+      left: 0;
+      justify-content: flex-start;
+      align-items: flex-end;
+      backdrop-filter: blur(15px);
+      height: 94vh;
+      max-height: 564px;
+      overflow-x: auto;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1000;
+    }
+  #secHed{
+    z-index: -1;
+  }
+  
+    .body__navBar>span {
+      display: block;
+      font-size: 40px;
+      cursor: pointer;
+      backdrop-filter: blur(15px);
+      width: 100%;
+      padding: 0%;
+      text-align: right;
+      
+    }
+  
+    .nav__ul {
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px 20px;
+      
+    }
+  
+    .nav__ul:nth-child(1) {
+      order: 2;
+      flex-direction: row;
+      border-top: 2px solid var(--text);
+      width: 100%;
+      align-items: center;
+    }
+  
+    
+    
+  
+    .nav--transalate {
+      transform: translateX(1000px);
+    } 
+    
+  
+    .navBar__menu {
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px 20px;
+      
+    }
+  
+    .body__navBar ul li {
+      text-align: right;
+    }
+  
+    .nav__li>span,
+  
+  
+    .nav__li {
+      text-align: right;
+      padding: 20px 0;
+    }
+    .nav--transalate {
+      transform: translateX(1000px);
+    }
+  
+  }
+  @media (max-width: 450px) {
+    
+    .body__navBar {
+      backdrop-filter: none ;
+      padding: 0;
+    }
+
+    .navBar {
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      top: 6vh;
+      left: 0;
+      justify-content: flex-start;
+      align-items: flex-end;
+      backdrop-filter: blur(15px);
+      height: 94vh;
+      max-height: 564px;
+      overflow-x: auto;
+      transition: transform 0.5s ease-in-out;
+      z-index: 1000;
+    }
+  #secHed{
+    z-index: -1;
+  }
+  
+    .body__navBar>span {
+      display: block;
+      font-size: 40px;
+      cursor: pointer;
+      backdrop-filter: blur(15px);
+      width: 100%;
+      padding: 0%;
+      text-align: right;
+      
+    }
+  
+    .nav__ul {
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px 20px;
+      
+    }
+  
+    .nav__ul:nth-child(1) {
+      order: 2;
+      flex-direction: row;
+      border-top: 2px solid var(--text);
+      width: 100%;
+      align-items: center;
+    }
+  
+    
+    
+  
+    .nav--transalate {
+      transform: translateX(1000px);
+    } 
+    
+  
+    .navBar__menu {
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px 20px;
+      
+    }
+  
+    .body__navBar ul li {
+      text-align: right;
+    }
+  
+    .nav__li>span,
+  
+  
+    .nav__li {
+      text-align: right;
+      padding: 20px 0;
+    }
+    .nav--transalate {
+      transform: translateX(1000px);
+    }
+
+  }
