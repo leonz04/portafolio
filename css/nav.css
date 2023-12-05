@@ -188,7 +188,7 @@
     .body__navBar {
       backdrop-filter: none ;
       padding: 0;
-      z-index: 1000;
+      
     }
 
     .navBar {

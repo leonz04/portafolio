@@ -8,7 +8,7 @@
 .unique_card__front,
 .unique_card__back {
   margin:0 auto;
-  padding: 1em;
+  padding: 19.5px;
   text-align: center;
   position: absolute;
   transform-origin: 50% 50%;
@@ -27,8 +27,8 @@
 
 .unique_card__front[data-tech="tech"] {
   width: 100%;
-  background-color: #e34c26;
-  color: white;
+  background-color: var(--text);
+  color:var(--bg);
 }
 
 .unique_card__back {
@@ -36,6 +36,8 @@
   transform: rotateX(-180deg);
   background-color: blue;
   color: var(--text);
+  padding: 19.5px;
+  font-size: 1.5rem;
 }
 
 .unique_card:hover .unique_card__front {

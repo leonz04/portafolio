@@ -7,10 +7,8 @@
 } */
 
 .section {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1000px;
-  padding: 2em;
+  width: 80%;
+  margin: 0 auto;  padding: 2em;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -31,7 +29,7 @@
 }
 
 .section__p {
-  font-size: 1.1rem;
+  font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 0.5em;
   color: var(--text);
@@ -50,7 +48,6 @@
 
 .section__li {
   width: 45%;
-  background-color: var(--bg-secondary);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   display: flex;
@@ -63,7 +60,7 @@
 
 .section li strong {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--text);
   font-weight: var(--font-bold);
   text-align: center;
