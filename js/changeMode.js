@@ -12,18 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Cambiar entre dark_mode y light_mode
     if (currentMode === 'Light Mode') {
-      modeText.textContent = 'Dark Mode';function cambiarImagenJS(){
-        document.getElementById("tunnel").src="image2.jpg";
-      }
-       
-      body.classList.remove('body_dark')
-
+      modeText.textContent = 'Dark Mode';
+      body.classList.remove('body_dark');
+      document.getElementById("tunnel").src="./assets/img/lionsvglight.svg";
+      
     } else {
       modeText.textContent = 'Light Mode';
-      body.classList.add('body_dark')
+      body.classList.add('body_dark');
+      document.getElementById("tunnel").src="./assets/img/lionsvgdark.svg";
     }
 
-    // window.alert('Cambio de modo realizado');
   });
 
 })
