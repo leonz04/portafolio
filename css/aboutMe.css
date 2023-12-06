@@ -75,10 +75,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 1441px) and (max-width: 2560px) {
+@media (min-width: 1440px) and (max-width: 2560px) {
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .section__ul {
     width: 100%;
     padding: 0;

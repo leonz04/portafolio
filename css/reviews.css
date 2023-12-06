@@ -61,6 +61,11 @@
   margin-top: 1rem;
 }
 
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .review-card {
+    width: 260px;
+}
+
 @media (max-width:550px) {
   .review-card {
     width: 90%;
