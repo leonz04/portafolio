@@ -65,10 +65,15 @@
   .review-card {
     width: 260px;
 }
+}
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .review-card {
-    width: 220px;
+    width: 180px;
+  }
+
+  .ul--review{
+    width:100%;
   }
 
 }
@@ -77,6 +82,5 @@
 @media (max-width:550px) {
   .review-card {
     width: 90%;
-  }
-  
+  } 
 }
