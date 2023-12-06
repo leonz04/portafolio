@@ -11,11 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log(currentMode);
 
     // Cambiar entre dark_mode y light_mode
-    if (currentMode === 'Dark Mode') {
-      modeText.textContent = 'Light Mode';
+    if (currentMode === 'Light Mode') {
+      modeText.textContent = 'Dark Mode';function cambiarImagenJS(){
+        document.getElementById("tunnel").src="image2.jpg";
+      }
+       
       body.classList.remove('body_dark')
+
     } else {
-      modeText.textContent = 'Dark Mode';
+      modeText.textContent = 'Light Mode';
       body.classList.add('body_dark')
     }
 

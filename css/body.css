@@ -1,16 +1,15 @@
  /* body */
 
  .body_light {
-   --bg: #6AB7FF;
-   --bg-secondary: #CED9E0;
-   --text: #000000;
+   --bg: hsl(39, 24%, 74%);
+   --text: rgba(2, 0, 36, 1);;
    --bgImage: "../assets/network";
+   --icon-footer: hsl(39, 24%, 74%);
 
  }
 
  .body_dark {
    --bg: linear-gradient(180deg, rgba(2, 0, 36, 1) 48%, rgba(7, 6, 81, 1) 73%, rgba(7, 7, 124, 1) 88%, rgba(2, 7, 140, 1) 100%);
-   --bg-secondary: #EDDC00;
    --text: #FFFFFF;
    --text-secondary: rgba(2, 0, 36, 1);
    --icon-footer:rgb(3 7 135);
