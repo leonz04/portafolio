@@ -107,7 +107,7 @@
 
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
 
   .body__navBar {
     backdrop-filter: blur(15px);
@@ -119,15 +119,22 @@
   }
 
   .body__navBar ul li {
-    padding: 5px;
+    padding: 4px;
+
   }
+
+  .body__navBar ul li a  {
+    font-size: 1rem;
+    padding: 0;
+  }
+
 
 
 
 }
 
 
-@media (min-width: 781px) and (max-width: 1024px) {
+@media (min-width: 781px) and (max-width: 1023px) {
 
 
   .body__navBar {

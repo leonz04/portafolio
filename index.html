@@ -14,10 +14,8 @@
     <link rel="stylesheet" type="text/css" href="./css/technologies.css">
     <link rel="stylesheet" type="text/css" href="./css/projects.css">
     <link rel="stylesheet" type="text/css" href="./css/reviews.css">
-
-    <link rel="stylesheet" type="text/css" href="./css/footer.css">
-
-    
+    <link rel="stylesheet" type="text/css" href="./css/contactMe.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">    
     <link rel="stylesheet" type="text/css" href="./css/unique.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,27 +43,41 @@
                 <li id="toggleModeBtn" class="nav__li modeText">Dark Mode</li>
             </ul>
             <ul class="nav__ul navBar__menu">
-                <a href="#">
-                    <li class="nav__li home navClose" data-translate-en="Home" data-translate-es="Inicio">Inicio</li>
-                </a>
-                <a href="#aboutMe">
-                    <li class="nav__li navClose" data-translate-en="About Me" data-translate-es="Sobre Mi">Sobre Mi</li>
-                </a>
-                <a href="#tech">
+                
+                    <li class="nav__li home navClose" data-translate-en="Home" data-translate-es="Inicio"><a href="#">Inicio</a></li>
+                
+                
+                    <li class="nav__li navClose" data-translate-en="About Me" data-translate-es="Sobre Mi"><a href="#aboutMe">Sobre Mi</a></li>
+                
+                
                     <li class="nav__li navClose" data-translate-en="Technologies" data-translate-es="Tecnologías">
-                        Tecnologías
+                        <a href="#tech">Tecnologías</a>
                     </li>
-                </a>
-                <a href="#projects">
-                    <li class="nav__li navClose" data-translate-en="Projects" data-translate-es="Proyectos">Proyectos
+                
+                
+                    <li class="nav__li navClose" data-translate-en="Projects" data-translate-es="Proyectos">
+                        <a href="#projects">
+                            Proyectos
+                        </a>
                     </li>
-                </a>
-                <a href="#contact" id="contact1">
+                
+                
+                    <li class="nav__li navClose" data-translate-en="Reviews" data-translate-es="Reseñas">
+                        <a href="#reviews">
+                            Reseñas
+                        </a>
+                    </li>
+                
+                
                     <li class="nav__li navClose" data-translate-en="Contact Me" data-translate-es="Contáctame">
-                        Contáctame</li>
-                </a>
+                        <a href="#contactMe">
+                        Contáctame
+                    </a>
+                    </li>
+                
             </ul>
-            <div>
+        </div>
+            
     </nav>
     <div id="progress"></div>
     <header>
@@ -99,7 +111,10 @@
             <h2 class="section__h2" data-translate-en="About Me" data-translate-es="Sobre Mí">Sobre Mí</h2>
             <p class="section__p"
               data-translate-en="I've participated in numerous web projects, cultivating a robust technical foundation and a mindset focused on problem-solving. I'm known for my ability to rapidly assimilate new technologies."
-              data-translate-es="He participado en numerosos proyectos web, desarrollando una sólida base técnica y una mentalidad enfocada en encontrar soluciones. Me caracterizo por mi habilidad para asimilar rápidamente nuevas tecnologías.">
+              data-translate-es="Soy una persona apasionada y creativa, especializada en desarrollo web. Mi enfoque se centra en
+              liderazgo, trabajo en equipo y la capacidad de mantener la calma bajo presión. Valoro la lealtad como
+              uno de mis principios fundamentales y creo en la autoexigencia, el respeto y la honestidad en
+              cada aspecto de mi vida profesional y personal">
               Soy una persona apasionada y creativa, especializada en desarrollo web. Mi enfoque se centra en
                 liderazgo, trabajo en equipo y la capacidad de mantener la calma bajo presión. Valoro la lealtad como
                 uno de mis principios fundamentales y creo en la autoexigencia, el respeto y la honestidad en
@@ -146,23 +161,23 @@
             <h2 data-translate-en="Technologies" data-translate-es="Tecnólogias">Tecnólogias</h2>
             <ul>
                 <li>
-                    <img class="icon" src="./assets/icons/js-icon-dark.svg"
-                        alt="animacion de carga correspondiente a la habilidad"></img>
+                    <img class="icon__tech" src="./assets/icons/js-icon-dark.svg"
+                        alt="animacion de carga correspondiente a la habilidad">
                     <h3>JavaScript</h3>
                 </li>
                 <li>
-                    <img class="icon" src="./assets/icons/html5-icon-dark.svg"
-                        alt="animacion de carga correspondiente a la Tecnologia"></img>
+                    <img class="icon__tech" src="./assets/icons/html5-icon-dark.svg"
+                        alt="animacion de carga correspondiente a la Tecnologia">
                     <h3>HTML5</h3>
                 </li>
                 <li>
-                    <img class="icon" src="./assets/icons/css3-icon-dark.svg"
-                        alt="animacion de carga correspondiente a la Tecnologia"></img>
+                    <img class="icon__tech" src="./assets/icons/css3-icon-dark.svg"
+                        alt="animacion de carga correspondiente a la Tecnologia">
                     <h3>CSS3</h3>
                 </li>
                 <li>
-                    <img class="icon" src="./assets/icons/git-icon-dark.svg"
-                        alt="animacion de carga correspondiente a la Tecnologia"></img>
+                    <img class="icon__tech" src="./assets/icons/git-icon-dark.svg"
+                        alt="animacion de carga correspondiente a la Tecnologia">
                     <h3>Git</h3>
                 </li>
 
@@ -195,32 +210,64 @@
                 <!-- aqui insertaremos los li -->
             </ul>
         </section>
+
+        <section id="contactMe" class="section">
+            <h2 class="section__h2" id="contactHeader" data-translate-en="Contact Me" data-translate-es="Contáctame">
+              Contáctame</h2>
+            <p data-translate-en="I am available through multiple channels. Choose the one you prefer:"
+              data-translate-es="Estoy disponible a través de múltiples canales. Elige el que prefieras:">Estoy disponible a
+              través de múltiples canales. Elige el que prefieras:</p>
+            <div class="contact-options">
+              <a class="contact-item" href="tel:+55435439">
+                <i class='icon bx bx-phone'></i>
+                <span data-translate-en="Call Me" data-translate-es="Llámame">Llámame</span>
+              </a>
+              <a class="contact-item" href="mailto:martinez@gmail.com">
+                <i class='icon bx bxl-gmail'></i>
+                <span data-translate-en="Send me an email" data-translate-es="Envíame un correo">Envíame un correo</span>
+              </a>
+              <a class="contact-item" href="https://wa.me/+544535" target="_blank">
+                <i class='icon bx bxl-whatsapp'></i>
+                <span data-translate-en="WhatsApp" data-translate-es="WhatsApp">WhatsApp</span>
+              </a>
+              <a class="contact-item" href="https://www.linkedin.com/in/gabrielmartinezghioma/" target="_blank">
+                <i class='icon bx bxl-linkedin'></i>
+                <span data-translate-en="LinkedIn" data-translate-es="LinkedIn">LinkedIn</span>
+              </a>
+              <a class="contact-item" href="https://github.com/gabrielmartinezghioma" target="_blank">
+                <i class='icon bx bxl-github'></i>
+                <span data-translate-en="GitHub" data-translate-es="GitHub">GitHub</span>
+              </a>
+            </div>
+          </section>
+
+
         <dialog id="dialog">
             <form action="">
                 <ul>
                     <li class="close__dialog">
-                        <button type="button" id="form__button_close" formmethod="dialog" formnovalidate>X
+                        <button type="button" id="form__button_close" >X
                         </button>
                     </li>
-                    <h4>Si deseas contactarme no dudes en dejar tu mensaje</h4>
+                    <li><h4>Si deseas contactarme no dudes en dejar tu mensaje</h4></li>
 
                     <li>
-                        <label for="">Nombre</label>
+                        <label for="name" id="name">Nombre</label>
                         <input type="text">
                     </li>
                     <li>
-                        <label for="">Apellido</label>
+                        <label for="lastName" id="lastName">Apellido</label>
                         <input type="text">
                     </li>
-                    <label for="">Correo</label>
+                    <label for="email" id="email">Correo</label>
                     <input type="email">
                     <li>
-                        <label for="">Asunto</label>
+                        <label for="subject">Asunto</label>
                         <input type="text">
                     </li>
                     <li>
-                        <label for="">Deja tu mensaje</label>
-                        <textarea rows="5" cols="21" type="text"></textarea>
+                        <label for="message">Deja tu mensaje</label>
+                        <textarea rows="5" cols="21" ></textarea>
                     </li>
                     <button type="submit">Send</button>
 
@@ -237,7 +284,7 @@
 
 			<div class="footer-left">
 
-                <img class="footer__img" id="tunnel" src="./assets/img/lionsvgdark.svg"
+                <img class="footer__img" src="./assets/img/lionsvgdark.svg" alt="footer Image">
 
 
 				<p class="footer-links">
@@ -295,39 +342,8 @@
 			</div>
 
 		</footer>
-    <!--<footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icon">
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
-        </ul>
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-            <li class="menu__item"></li><a class="menu__link" ><p id="contacto">Contact</p></a></li>
-
-        </ul>
-        <p>&copy;2023 Andres Felipe Leon | All Rights Reserved</p>
-    </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>-->
+   
+   
 
     <script src="./js/changeLenguage.js"></script>
     <script src="./js/promese.js"></script>
