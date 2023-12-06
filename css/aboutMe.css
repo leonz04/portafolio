@@ -1,20 +1,16 @@
-/* .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1em 0 2em 0;
-} */
+
 
 .section {
   width: 80%;
-  margin: 0 auto;  padding: 2em;
+  margin: 0 auto;  
+  padding: 2em;
   border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
   position: relative;
+  
 }
 
 .section__h2,
@@ -39,11 +35,11 @@
 .section__ul {
   width: 100%;
   list-style-type: none;
-  padding-left: 0;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2em;
+  gap: 6em;
 }
 
 .section__li {
@@ -55,7 +51,6 @@
   gap: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
-  margin-top: 5rem;
 }
 
 .section li strong {
@@ -78,4 +73,90 @@
 .section li:active {
   transform: translateY(-5px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+ 
+  .section__ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    position: relative;
+    gap:  5rem;
+  }
+  
+
+  .section__li{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: aqua;
+  }
+
+  .section__li span{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .section__li strong{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+ 
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+
+  .section{
+    width: 100%;
+    padding: 0;
+  }
+
+  .section__ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .section__p {
+    padding: 10px;    
+    text-align:center;
+  }
+
+  .section__li{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .section__li span{
+   font-size: 1rem;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .section__li strong{
+
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+
 }

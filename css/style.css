@@ -14,67 +14,23 @@
    padding: 0;
  }
 
- 
- 
+ a,a:link, a:visited, a:active {
+  color: var(--bg);
+  text-decoration:none;
+}
 
  
-
-
-
-
-
-
-
-
- /*section__tech*/
-
- .main__section__tech{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
- .main__section__tech h2{
-  font-size: 3em;
-  margin: 7vh 0 4vh 0;
-  font-weight: 500;
-  color: var(--text);
- }
- .main__section__tech ul{
-  width: 100%;
-  
-  list-style: none;
-  display: flex;
-  justify-content:space-between;
- }
- .main__section__tech ul li{
-  width: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 20px;
-  margin-top: 15px;
-  justify-content: flex-end;
- }
-
-
- .main__section__tech ul li h3{
-  width: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 20px;
-  color: rgb(238, 229, 112);
-  margin-top: 20px;
-  letter-spacing: 3px;
- }
-
- .icon:hover{
-  filter:drop-shadow(0px 5px 2px rgb(250, 234, 5));
-
- }
+ 
 
  
+
+
+
+
+
+
+
+
 
 
  /*dialog*/

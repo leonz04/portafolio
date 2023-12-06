@@ -13,7 +13,7 @@ const sections = document.querySelectorAll('section')
           subject: section
         }),
         rangeStart: 'entry 10%',
-        rangeEnd: 'cover 45%',
+        rangeEnd: 'cover 40%',
       }
       )
     })
@@ -26,11 +26,6 @@ const sections = document.querySelectorAll('section')
       
     ]
 
-    const titlesTumbling = [
-      { transform: 'translate(500px, -500px)'}, 
-      { transform: 'translate(0, 0)' }
-      
-    ]
 
     const imgTiming = {
       duration: 3000,
@@ -39,7 +34,4 @@ const sections = document.querySelectorAll('section')
       imgTumbling, 
       imgTiming
     )
-    document.getElementById("secHed").animate(
-      titlesTumbling, 
-      imgTiming
-    )
+    
