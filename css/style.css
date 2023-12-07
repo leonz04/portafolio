@@ -15,7 +15,7 @@
  }
 
  a,a:link, a:visited, a:active {
-  color: var(--bg);
+  color: var(--text-nav);
   text-decoration:none;
 }
 

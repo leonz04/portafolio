@@ -34,17 +34,18 @@ header {
    margin: 20px;
    font-size: 1.3em;
    font-weight: 600;
-   color: #cdc9c9;
+   color: var(--text);
    border-radius: 15px;
    animation: wiggle 2s linear infinite;
    cursor: pointer;  
      border: none;
-     border: 4px solid #cdc9c9;
+     border: 4px solid var(--text);
      padding: 7px;
 
  }
  .header__section__buttons a:hover {
-  background-color: #cdc9c9 ;
+  background-color: var(--text) ;
+
   color: var(--text-secondary);
 
 

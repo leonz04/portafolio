@@ -2,9 +2,13 @@
 
  .body_light {
    --bg: hsl(39, 24%, 74%);
-   --text: rgba(2, 0, 36, 1);;
+   --text: rgba(2, 0, 36, 1);
    --bgImage: "../assets/network";
    --icon-footer: hsl(39, 24%, 74%);
+   --text-secondary: hsl(39, 24%, 74%);
+   --text-nav:rgba(2, 0, 36, 1);
+   
+
 
  }
 
@@ -13,6 +17,7 @@
    --text: #FFFFFF;
    --text-secondary: rgba(2, 0, 36, 1);
    --icon-footer:rgb(3 7 135);
+   --text-nav:#FFFFFF
  }
 
  body {

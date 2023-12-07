@@ -5,7 +5,7 @@ const footer = document.querySelectorAll('footer')
     sections.forEach(function(section){
       section.animate(
       [
-        {opacity:0, scale:0.5},
+        {opacity:0, scale:1},
         {opacity:1, scale:1}
       ],
       {
@@ -22,7 +22,7 @@ const footer = document.querySelectorAll('footer')
     footer.forEach(function(section){
       section.animate(
       [
-        {opacity:0, scale:0.5},
+        {opacity:0, scale:1},
         {opacity:1, scale:1}
       ],
       {
@@ -35,9 +35,6 @@ const footer = document.querySelectorAll('footer')
       }
       )
     })
-
-
-
 
   })
 
