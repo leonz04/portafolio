@@ -56,10 +56,15 @@
   border-radius: 15px;
   font-weight: 500;
   border: 2px solid var(--text);
+  
 }
 
 .body__navBar ul li a{
   color: var(--text-secondary);
+}
+
+.body__navBar ul li a:hover{
+  color: var(--text);
 }
 
 .body__navBar ul li:hover {
@@ -88,6 +93,10 @@
   
 }
 
+.nav__li a:hover{
+  color: var(--text-secondary);
+}
+
 
 
 /*progress_bar*/
@@ -108,15 +117,7 @@
     padding: 0;
   }
 
-  .body__navBar ul li {
-    color: var(--bg);
-    background-color: var(--text);
-    padding: 0 10px;
-    margin: 0 10px;
-    border-radius: 15px;
-    font-weight: 500;
-    border: 2px solid var(--text);
-  }
+ 
 
 
 
@@ -235,6 +236,7 @@
 
 
   .nav__li {
+
     text-align: right;
     padding: 20px 0;
   }
