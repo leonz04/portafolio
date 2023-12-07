@@ -81,7 +81,7 @@
     
   }
 }
-}
+
 @media (min-width: 425px) and (max-width: 767px) {
  
   .unique_card{
@@ -106,6 +106,9 @@
     font-size: 1.2rem;
     z-index: 1000;
     border: 2px solid #ffffff;
+    .unique_card__front{
+      padding: 0;
+    }
     
   }
 }
